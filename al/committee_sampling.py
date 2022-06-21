@@ -8,9 +8,25 @@ from . import SamplingMethod
 
 
 class CommitteeDisagreementSampling(SamplingMethod):
+    """
+    Sample data points a committee judges differently, i.e. data points where disagreement occurs.
+
+    See also: https://medium.com/@hardik.dave/active-learning-sampling-strategies-f8d8ac7037c8#07a8
+
+    """
+
     @staticmethod
     def select_batch(pool: pd.DataFrame, nr_samples: int, committee: List[BaseEstimator], **kwargs) -> list:
-        
+        """
+        Returns batch of data points using committee disagreement sampling.
+
+        :param pool: Dataframe with data points that can be sampled.
+        :param nr_samples: Number of data points that should be sampled.
+        :param committee: A voting committee of fitted sklearn estimators.
+        :param kwargs: Additional arguments.
+        :return: Indices of sampled data points.
+        """
+
         vote_proba = []
         for member in committee:
             vote_proba.append(member.predict_proba(pool))

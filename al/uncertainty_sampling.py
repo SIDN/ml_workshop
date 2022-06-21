@@ -6,8 +6,24 @@ from . import SamplingMethod
 
 
 class UncertaintySampling(SamplingMethod):
+    """
+    Sample data points a model is uncertain about, i.e. data points close a model's decision boundary.
+
+    See also: https://medium.com/@hardik.dave/active-learning-sampling-strategies-f8d8ac7037c8#cca6
+
+    """
+
     @staticmethod
     def select_batch(pool: pd.DataFrame, nr_samples: int, model: BaseEstimator, **kwargs) -> list:
+        """
+        Returns batch of data points using uncertainty sampling.
+
+        :param pool: Dataframe with data points that can be sampled.
+        :param nr_samples: Number of data points that should be sampled.
+        :param model: A fitted sklearn estimator that is used to compute uncertainty.
+        :param kwargs: Additional arguments.
+        :return: Indices of sampled data points.
+        """
         try:
             distances = model.decision_function(pool)
         except AttributeError:
