@@ -22,7 +22,7 @@ class CommitteeDisagreementSampling(SamplingMethod):
 
         :param pool: Dataframe with data points that can be sampled.
         :param nr_samples: Number of data points that should be sampled.
-        :param committee: A voting committee of fitted sklearn estimators.
+        :param committee: A voting committee of at least two fitted sklearn estimators.
         :param kwargs: Additional arguments.
         :return: Indices of sampled data points.
         """
