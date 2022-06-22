@@ -4,8 +4,8 @@ Jupyter Notebooks and supporting code for the machine learning workshop at the [
 
 This workshops contains two assignments:
 
-- [`Assignment1.ipynb`](https://colab.research.google.com/github/SIDN/tma22_ml/blob/main/Assignment1.ipynb): Participants use this notebook to train, test and tune [`scikit-learn`](https://scikit-learn.org/stable/index.html) classifier(s) that discriminate between benign and fraud transactions.
-- [`Assignment2.ipynb`](https://colab.research.google.com/github/SIDN/tma22_ml/blob/main/Assignment2.ipynb): Participants use this notebook to inclemently improve their classifier(s) using active learning. 
+- [`Assignment1`](https://colab.research.google.com/github/SIDN/tma22_ml/blob/main/Assignment1.ipynb): Participants use this notebook to train, test and tune [`scikit-learn`](https://scikit-learn.org/stable/index.html) classifier(s) that discriminate between benign and fraud transactions.
+- [`Assignment2`](https://colab.research.google.com/github/SIDN/tma22_ml/blob/main/Assignment2.ipynb): Participants use this notebook to inclemently improve their classifier(s) using active learning. 
 
 ## Run
 
