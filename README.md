@@ -3,8 +3,8 @@
 Jupyter Notebooks and supporting code for our machine learning workshop.
 
 Given at
-- [TMA22 PhD School](https://tma.ifip.org/2022/phd-school/)
-- AI Study association CognAC
+- [TMA22 PhD School](https://tma.ifip.org/2022/phd-school/) (June 2022)
+- Radboud AI Study association [CognAC](https://svcognac.nl/) (March 2023)
 
 This workshops contains two assignments:
 
