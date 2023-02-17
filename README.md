@@ -1,4 +1,4 @@
-# Machine learning workshop
+# Operational machine learning workshop
 
 Jupyter Notebooks and supporting code for our machine learning workshop.
 
