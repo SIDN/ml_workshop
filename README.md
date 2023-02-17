@@ -1,6 +1,10 @@
-# Machine learning workshop @ TMA22 PhD School 
+# Machine learning workshop
 
-Jupyter Notebooks and supporting code for the machine learning workshop at the [TMA22 PhD School](https://tma.ifip.org/2022/phd-school/).
+Jupyter Notebooks and supporting code for our machine learning workshop.
+
+Given at
+- [TMA22 PhD School](https://tma.ifip.org/2022/phd-school/)
+- AI Study association CognAC
 
 This workshops contains two assignments:
 
